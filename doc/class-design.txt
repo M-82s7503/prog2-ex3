@@ -1,4 +1,4 @@
-Mapクラス
+【Mapクラス】
 フィールド変数：
     int start:スタート位置
     int mapSize:迷路サイズ
@@ -14,3 +14,23 @@ Mapクラス
         迷路サイズの二次元配列を確保
         二次元配列に迷路を入れる
         Gを読み込んでgoalに代入
+
+
+
+【Playerクラス】
+フィールド変数：
+    int place:プレイヤーの位置
+    int count:歩数
+
+コンストラクタ：
+    引数：スタート位置
+    処理：
+        This.placeにスタート位置を代入
+        This.count を0で初期化
+        
+メソッド：
+    moveUp(This.place)   : 上に一歩移動するメソッド
+    moveDown(This.place) : 下に一歩移動するメソッド
+    moveRight(This.place) : 右に一歩移動するメソッド
+    moveLeft(This.place)  : 左に一歩移動するメソッド
+    // placeを読み込んで、それぞれの動き通りにplaceに数値を足し引きする。
