@@ -3,7 +3,7 @@
     int start:スタート位置
     int mapSize:迷路サイズ
     Char map[][]:マップ(char型二次元配列)
-    String goal:ゴール位置
+    String goal:ゴール位置   //int?
 
 コンストラクタ：
     引数：マップファイル
@@ -14,7 +14,8 @@
         迷路サイズの二次元配列を確保
         二次元配列に迷路を入れる
         Gを読み込んでgoalに代入
-
+メソッド：
+    printMap(Char map[][],int place):現在マップの出力
 
 
 【Playerクラス】
@@ -29,8 +30,9 @@
         This.count を0で初期化
         
 メソッド：
-    moveUp(This.place)   : 上に一歩移動するメソッド
-    moveDown(This.place) : 下に一歩移動するメソッド
-    moveRight(This.place) : 右に一歩移動するメソッド
-    moveLeft(This.place)  : 左に一歩移動するメソッド
+    moveUp()   : 上に一歩移動するメソッド
+    moveDown() : 下に一歩移動するメソッド
+    moveRight() : 右に一歩移動するメソッド
+    moveLeft()  : 左に一歩移動するメソッド
     // placeを読み込んで、それぞれの動き通りにplaceに数値を足し引きする。
+    //　壁にぶつかったら止まる
