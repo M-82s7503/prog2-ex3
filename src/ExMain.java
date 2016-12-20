@@ -15,7 +15,7 @@ public class ExMain{
 
         map.printMap(player.getPlace());
 
-        player.moveLeft(Map.getmap());               //移動
+        player.moveLeft();               //移動
 
         map.printMap(player.getPlace());
 
