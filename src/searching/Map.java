@@ -9,14 +9,14 @@ import java.io.File;
 
 
 public class Map {
-    static int start_x,start_y;
-    static int mapsize[] = new int[2];
-    static char[][] map;               //マップ(char型二次元配列)
-    static int goal[] = new int [2];                //ゴール位置
+    int start_x,start_y;
+    int mapsize[] = new int[2];
+    char[][] map;               //マップ(char型二次元配列)
+    int goal[] = new int [2];                //ゴール位置
 
 
 
-    public static void main(String args[]) {
+    public void Map(String args[]) {
         try {
 
             File file = new File("/Users/Cokoten/soft2/prog2-ex3/src/map.txt");
