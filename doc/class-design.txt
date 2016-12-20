@@ -2,7 +2,7 @@
 フィールド変数：
     int start_x,start_y:スタート位置
     int mapSize:迷路サイズ
-    Char map[][]:マップ(char型二次元配列)
+    char map[][]:マップ(char型二次元配列)
     String goal:ゴール位置   //int?
 
 コンストラクタ：
@@ -15,7 +15,8 @@
         二次元配列に迷路を入れる
         Gを読み込んでgoalに代入
 メソッド：
-    printMap(Char map[][],int place):現在マップの出力
+    printMap(Char map[][],int place):現在マップの標準出力
+    getMap(){  // マップのデータ（char map[][]）のゲッター}
 
 
 【Playerクラス】  //カプセル化する。→ get, set系も実装

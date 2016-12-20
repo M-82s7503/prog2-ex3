@@ -8,14 +8,14 @@ public class ExMain{
         System.out.println(map.val);    //迷路インスタンスの生成
 
         int[] place = {map.start_x, map.start_y};
-        Player player = new Player(place);
+        Player player = new Player(place, Map.getmap());
 
-        place = player.getPlace();
-        System.out.println(place); //プレイヤーインスタンス
+        place = player.getPlace(); //プレイヤーインスタンス
+        System.out.println(place);
 
         map.printMap(player.getPlace());
 
-        player.moveLeft();               //移動
+        player.moveLeft(Map.getmap());               //移動
 
         map.printMap(player.getPlace());
 
