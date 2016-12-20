@@ -1,5 +1,4 @@
-package Searchig;
-
+import searching.Map;
 
 public class ExMain{
     Map map = new Map();
