@@ -18,9 +18,9 @@
     printMap(Char map[][],int place):現在マップの出力
 
 
-【Playerクラス】
+【Playerクラス】  //カプセル化する。→ get, set系も実装
 フィールド変数：
-    int place:プレイヤーの位置
+    int[] place:プレイヤーの位置。[横, 縦](原点左上端)
     int count:歩数
 
 コンストラクタ：
@@ -36,3 +36,6 @@
     moveLeft()  : 左に一歩移動するメソッド
     // placeを読み込んで、それぞれの動き通りにplaceに数値を足し引きする。
     //　壁にぶつかったら止まる
+
+    getPlace(){}
+    getCount(){}
