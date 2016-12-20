@@ -2,7 +2,7 @@ import searching.Map;
 import searching.Player;
 
 public class ExMain{
-    public main(String[] args) {
+    public static void main(String[] args) {
         Map map = new Map();
 
         System.out.println(map.val);    //迷路インスタンスの生成

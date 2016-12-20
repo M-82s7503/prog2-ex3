@@ -41,8 +41,8 @@ public class Map {
             mapsize[1] = Integer.parseInt(size[1]);
 
             //mapSize
-            System.out.println("" + start_x +","+ start_y);
-            System.out.println("" + mapsize[0] +","+ mapsize[1] );
+//            System.out.println("" + start_x +","+ start_y);
+//            System.out.println("" + mapsize[0] +","+ mapsize[1] );
 
             map = new char[mapsize[1]][mapsize[0]];
 
@@ -50,10 +50,10 @@ public class Map {
             // iが縦、jが横
             for(int i =0; i<mapsize[1]; i++ ){
                 String str2 = str1[2+i];
-                System.out.println(str2);
+//                System.out.println(str2);
                 for(int j =0; j<mapsize[0]; j++ ){
                     map[i][j] = str2.charAt(j);
-                    System.out.println(map[i][j]);
+//                    System.out.println(map[i][j]);
                     if( map[i][j] == 'G'){
                         goal[0] = i;
                         goal[1] = j;
@@ -61,21 +61,24 @@ public class Map {
                 }
             }
 
-            System.out.println(""+goal[0]+goal[1]);
-
-//            int i = 0;
-//            while(i<100){
-//                mapdata[i] = str.charAt(i);
-//                System.out.println(mapdata[i]);
-//                i++;
-//                if(i==20)break;
-//            }
-
+//            System.out.println(""+goal[0]+goal[1]);
 
 
         } catch (FileNotFoundException e) {
             System.out.println(e);
         }
 
+    }
+
+    public void printMap(char map[][],int place){
+        for(int i =0; i<mapsize[1]; i++ ){
+            for(int j =0; j<mapsize[0]; j++ ){
+                System.out.println(map[i][j]);
+            }
+        }
+    }
+
+    public char[][] getMap() {
+        return map;
     }
 }
