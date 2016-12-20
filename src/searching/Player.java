@@ -14,21 +14,21 @@ public class Player {
 
     //　壁にぶつかったら止まる
     public void moveUp(){     // 上に一歩移動するメソッド
-        this.place[1]--;
+        place[1]--;
         count++;
     }
     public void moveDown(){   // 下に一歩移動するメソッド
-        this.place[1]++;
+        place[1]++;
         count++;
     }
     public void moveRight(){  // 右に一歩移動するメソッド
-        this.place[0]++;
+        place[0]++;
         count++;
     }
 
     public void moveLeft(){   // 左に一歩移動するメソッド
+        place[0]--;
         count++;
-        this.place[0]--;
     }
 
     public int[] getPlace(){

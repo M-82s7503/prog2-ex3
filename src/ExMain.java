@@ -4,28 +4,28 @@ import searching.Player;
 public class ExMain{
     public main(String[] args) {
         Map map = new Map();
-        int[] place = {map.start_x, map.start_y};
-        Player player = new Player(place);
-
 
         System.out.println(map.val);    //迷路インスタンスの生成
 
-        Player player = new Player();
-        System.out.println(player.val); //プレイヤーインスタンス
+        int[] place = {map.start_x, map.start_y};
+        Player player = new Player(place);
 
-        map.printMap(map, plyer.getplace());
+        place = player.getPlace();
+        System.out.println(place); //プレイヤーインスタンス
 
-        plyer.moveLeft();               //移動
+        map.printMap(player.getPlace());
 
-        map.printMap(map[][],plyer.place);
+        player.moveLeft();               //移動
 
-        plyer.moveDown();
+        map.printMap(player.getPlace());
 
-        map.printMap(map[][],plyer.place);
+        player.moveDown();
 
-        plyer.moveRight();              //右に移動（できない）
+        map.printMap(player.getPlace());
 
-        map.printMap(map[][],plyer.place);  //位置が変わっていないことの確認
+        player.moveRight();              //右に移動（できない）
+
+        map.printMap(player.getPlace());  //位置が変わっていないことの確認
     }
 
 }
