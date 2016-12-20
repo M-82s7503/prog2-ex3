@@ -1,7 +1,7 @@
 /**
  * Created by Cokoten on 2016/11/29.
  */
-package Map;
+package searching;
 
 import java.util.Scanner;
 import java.io.FileNotFoundException;     //ファイルがなかった時の例外処理
@@ -11,7 +11,7 @@ import java.io.File;
 public class Map {
     int start_x,start_y;
     int mapsize[];
-    Char map[][];               //マップ(char型二次元配列)
+    char map[][];               //マップ(char型二次元配列)
     String goal;                //ゴール位置
 
 
